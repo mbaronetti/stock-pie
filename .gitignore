@@ -5,7 +5,7 @@ package-lock.json
 # Firebase
 .firebase/
 firebase-debug.log
-.firebaserc
+# .firebaserc - We need this file in the repo for GitHub Actions
 
 # Environment variables
 .env
@@ -28,3 +28,8 @@ npm-debug.log*
 # Temporary files
 *.tmp
 .cache/
+
+# Tokens and sensitive files
+githubtoken.txt
+firebasetoken.txt
+*.token
