@@ -1,0 +1,16 @@
+{
+  "name": "t212_pie",
+  "version": "1.0.0",
+  "description": "Build a **high-converting, SEO-optimized landing page** to promote a Trading 212 investment pie with advanced UX/UI, innovative engagement features, and strategic CTA placement for maximizing referral conversions.",
+  "main": "fetch-stock-data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "yahoo-finance2": "^2.13.3"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "name": "AI Industry Pie",
+    "description": "24 AI leaders covering the full AI value chain",
+    "totalStocks": 24,
+    "note": "Returns calculated on a rolling 12-month basis"
+  },
+  "sectorColors": {
+    "AI Chips": "#8B5CF6",
+    "Cloud AI": "#2E5BFF",
+    "AI Research": "#10B981",
+    "AI Software": "#F4B942",
+    "AI Infrastructure": "#EC4899",
+    "Autonomous AI": "#F59E0B",
+    "Chip Manufacturing": "#3B82F6",
+    "AI Memory": "#8B5CF6",
+    "Enterprise AI": "#10B981",
+    "Edge AI": "#6366F1",
+    "AI Networking": "#EC4899",
+    "Chip Equipment": "#7C3AED",
+    "AI Tools": "#2563EB",
+    "AI Security": "#EF4444"
+  },
+  "holdings": [
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "sector": "AI Software",
+      "aiCategory": "AI Platforms",
+      "allocation": 4,
+      "description": "AIP platform, government & enterprise AI solutions"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "sector": "AI Chips",
+      "aiCategory": "AI Hardware",
+      "allocation": 5,
+      "description": "Leading AI GPU manufacturer, CUDA ecosystem"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "sector": "Autonomous AI",
+      "aiCategory": "AI Applications",
+      "allocation": 4,
+      "description": "FSD, Optimus, Dojo supercomputer"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "sector": "Cloud AI",
+      "aiCategory": "AI Infrastructure",
+      "allocation": 5,
+      "description": "Azure AI, OpenAI partnership, Copilot"
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "sector": "Chip Manufacturing",
+      "aiCategory": "AI Hardware",
+      "allocation": 4,
+      "description": "Manufactures chips for NVIDIA, Apple, AMD"
+    },
+    {
+      "ticker": "VERI",
+      "name": "Veritone",
+      "sector": "AI Software",
+      "aiCategory": "AI Platforms",
+      "allocation": 4,
+      "description": "aiWARE platform, media AI solutions"
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "sector": "Cloud AI",
+      "aiCategory": "AI Infrastructure",
+      "allocation": 4,
+      "description": "Cloud infrastructure, AI databases"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "sector": "AI Memory",
+      "aiCategory": "AI Hardware",
+      "allocation": 4,
+      "description": "HBM memory for AI chips, data center DRAM"
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sector": "AI Chips",
+      "aiCategory": "AI Hardware",
+      "allocation": 4,
+      "description": "MI series AI accelerators, EPYC CPUs"
+    },
+    {
+      "ticker": "IBM",
+      "name": "IBM",
+      "sector": "Enterprise AI",
+      "aiCategory": "AI Platforms",
+      "allocation": 4,
+      "description": "Watson AI, quantum computing, enterprise solutions"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Class A",
+      "sector": "Cloud AI",
+      "aiCategory": "AI Infrastructure",
+      "allocation": 5,
+      "description": "Google Cloud, TPUs, Gemini, DeepMind"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "sector": "AI Software",
+      "aiCategory": "AI Platforms",
+      "allocation": 5,
+      "description": "Llama models, content moderation AI, AR/VR"
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "sector": "AI Networking",
+      "aiCategory": "AI Infrastructure",
+      "allocation": 4,
+      "description": "High-speed networking for AI data centers"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "sector": "Enterprise AI",
+      "aiCategory": "AI Applications",
+      "allocation": 4,
+      "description": "AI-powered workflow automation"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "sector": "Edge AI",
+      "aiCategory": "AI Applications",
+      "allocation": 4,
+      "description": "Neural Engine, on-device AI, Siri"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "sector": "Cloud AI",
+      "aiCategory": "AI Infrastructure",
+      "allocation": 4,
+      "description": "AWS AI services, Trainium chips, Alexa"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "sector": "AI Chips",
+      "aiCategory": "AI Hardware",
+      "allocation": 4,
+      "description": "Custom AI silicon, data center chips"
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML",
+      "sector": "Chip Equipment",
+      "aiCategory": "AI Infrastructure",
+      "allocation": 4,
+      "description": "EUV lithography, enables advanced chip manufacturing"
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "sector": "AI Tools",
+      "aiCategory": "AI Infrastructure",
+      "allocation": 4,
+      "description": "AI chip design software, EDA tools"
+    },
+    {
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "sector": "Edge AI",
+      "aiCategory": "AI Hardware",
+      "allocation": 4,
+      "description": "Mobile AI chips, edge AI processing"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "sector": "AI Chips",
+      "aiCategory": "AI Hardware",
+      "allocation": 4,
+      "description": "Gaudi AI accelerators, Xeon CPUs"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "sector": "Enterprise AI",
+      "aiCategory": "AI Platforms",
+      "allocation": 4,
+      "description": "Enterprise AI software platform"
+    },
+    {
+      "ticker": "REKR",
+      "name": "Rekor Systems",
+      "sector": "AI Software",
+      "aiCategory": "AI Applications",
+      "allocation": 4,
+      "description": "AI for traffic & transportation management"
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "sector": "Cloud AI",
+      "aiCategory": "AI Infrastructure",
+      "allocation": 4,
+      "description": "AI cloud computing infrastructure"
+    }
+  ]
+}

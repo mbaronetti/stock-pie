@@ -1,0 +1,88 @@
+# GitHub Actions Workflow: Daily Stock Data Update
+# 
+# 🤖 What This Does:
+# 1. Runs every day at 9 AM UTC (automatically)
+# 2. Fetches fresh stock data from Yahoo Finance
+# 3. Commits the updated stock-data.json to your repo
+# 4. Firebase automatically deploys the update
+#
+# 📚 How It Works:
+# - "schedule" = Run on a timer (cron job)
+# - "workflow_dispatch" = You can also trigger manually from GitHub UI
+# - Each "step" is a command the robot executes
+
+name: Update Stock Data Daily
+
+# ⏰ When to run this workflow
+on:
+  # Run every day at 9:00 AM UTC (adjust timezone as needed)
+  schedule:
+    - cron: '0 9 * * *'  # Format: minute hour day month dayofweek
+    #         │ │ │ │ │
+    #         │ │ │ │ └─── Day of week (0-7, 0 and 7 are Sunday)
+    #         │ │ │ └───── Month (1-12)
+    #         │ │ └─────── Day of month (1-31)
+    #         │ └───────── Hour (0-23)
+    #         └─────────── Minute (0-59)
+  
+  # Also allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+# 🏃 The job to run
+jobs:
+  update-data:
+    name: Fetch and Update Stock Data
+    runs-on: ubuntu-latest  # Use Ubuntu Linux (free on GitHub)
+    
+    steps:
+      # Step 1: Download your code from GitHub
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          # Important: Use a Personal Access Token (PAT) so it can commit changes
+          token: ${{ secrets.GH_PAT }}
+      
+      # Step 2: Install Node.js (needed to run fetch-stock-data.js)
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # Use Node.js version 20
+      
+      # Step 3: Install dependencies (yahoo-finance2 package)
+      - name: 📦 Install Dependencies
+        run: npm install
+      
+      # Step 4: Run the data fetch script
+      - name: 🔄 Fetch Fresh Stock Data
+        run: node fetch-stock-data.js
+        # This creates/updates: public/data/stock-data.json
+      
+      # Step 5: Check if stock-data.json changed
+      - name: 🔍 Check for Changes
+        id: git-check
+        run: |
+          git diff --exit-code public/data/stock-data.json || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      # Step 6: Commit the updated file (only if it changed)
+      - name: 💾 Commit Updated Data
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add public/data/stock-data.json
+          git commit -m "🤖 Auto-update stock data - $(date +'%Y-%m-%d %H:%M UTC')"
+          git push
+      
+      # Step 7: Deploy to Firebase (optional - Firebase auto-deploys on push)
+      # Uncomment if you want manual Firebase deploy from Actions:
+      # - name: 🚀 Deploy to Firebase
+      #   run: |
+      #     npm install -g firebase-tools
+      #     firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
+
+# 📝 Notes:
+# - This workflow is FREE on GitHub (2,000 minutes/month for public repos)
+# - Runs take ~1-2 minutes
+# - If you push to your repo manually, it won't re-run (only on schedule/manual trigger)
+# - You can see logs in GitHub Actions tab
+

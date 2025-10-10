@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "baselineDate": "2024-10-10",
+    "lastUpdated": "2025-10-10T12:40:30.510Z",
+    "totalStocks": 24,
+    "successfulFetches": 24,
+    "failedFetches": 0
+  },
+  "stocks": [
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "baselinePrice": 43.52,
+      "currentPrice": 185.47,
+      "stockReturn": 326.17,
+      "oneMonthReturn": 17.3,
+      "threeMonthReturn": 39.27,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "baselinePrice": 40,
+      "currentPrice": 143.08,
+      "stockReturn": 257.7,
+      "oneMonthReturn": 39.2,
+      "threeMonthReturn": -4.92,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "REKR",
+      "name": "Rekor Systems",
+      "baselinePrice": 1.07,
+      "currentPrice": 1.96,
+      "stockReturn": 83.18,
+      "oneMonthReturn": 67.52,
+      "threeMonthReturn": 36.11,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "baselinePrice": 238.77,
+      "currentPrice": 435.54,
+      "stockReturn": 82.41,
+      "oneMonthReturn": 25.89,
+      "threeMonthReturn": 26.51,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "baselinePrice": 105.69,
+      "currentPrice": 192.33,
+      "stockReturn": 81.98,
+      "oneMonthReturn": 57.65,
+      "threeMonthReturn": 88.1,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "baselinePrice": 175.41,
+      "currentPrice": 296.96,
+      "stockReturn": 69.29,
+      "oneMonthReturn": 23.57,
+      "threeMonthReturn": 75.57,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "baselinePrice": 23.22,
+      "currentPrice": 37.8,
+      "stockReturn": 62.79,
+      "oneMonthReturn": 51.62,
+      "threeMonthReturn": 86.3,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "baselinePrice": 185.78,
+      "currentPrice": 299.88,
+      "stockReturn": 61.42,
+      "oneMonthReturn": 25.86,
+      "threeMonthReturn": 51.75,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "baselinePrice": 102.44,
+      "currentPrice": 158.23,
+      "stockReturn": 54.46,
+      "oneMonthReturn": 16.15,
+      "threeMonthReturn": 67.44,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Class A",
+      "baselinePrice": 162.08,
+      "currentPrice": 241.53,
+      "stockReturn": 49.02,
+      "oneMonthReturn": 14.12,
+      "threeMonthReturn": 45.34,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "baselinePrice": 134.81,
+      "currentPrice": 192.57,
+      "stockReturn": 42.85,
+      "oneMonthReturn": 6.88,
+      "threeMonthReturn": 36.36,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "baselinePrice": 164.18,
+      "currentPrice": 232.89,
+      "stockReturn": 41.85,
+      "oneMonthReturn": 38.15,
+      "threeMonthReturn": 98.53,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "baselinePrice": 583.83,
+      "currentPrice": 733.51,
+      "stockReturn": 25.64,
+      "oneMonthReturn": -2.34,
+      "threeMonthReturn": 10,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "baselinePrice": 415.84,
+      "currentPrice": 522.4,
+      "stockReturn": 25.63,
+      "oneMonthReturn": 2.5,
+      "threeMonthReturn": 12.84,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "baselinePrice": 72.54,
+      "currentPrice": 90.68,
+      "stockReturn": 25.01,
+      "oneMonthReturn": 17.42,
+      "threeMonthReturn": 45.41,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "IBM",
+      "name": "IBM",
+      "baselinePrice": 233.02,
+      "currentPrice": 288.23,
+      "stockReturn": 23.69,
+      "oneMonthReturn": 17.3,
+      "threeMonthReturn": 8.68,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "baselinePrice": 186.65,
+      "currentPrice": 227.74,
+      "stockReturn": 22.01,
+      "oneMonthReturn": -1.67,
+      "threeMonthReturn": 10.71,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML",
+      "baselinePrice": 833.97,
+      "currentPrice": 980.54,
+      "stockReturn": 17.57,
+      "oneMonthReturn": 28.43,
+      "threeMonthReturn": 31.22,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "VERI",
+      "name": "Veritone",
+      "baselinePrice": 4.62,
+      "currentPrice": 5.25,
+      "stockReturn": 13.64,
+      "oneMonthReturn": 82.93,
+      "threeMonthReturn": 252.35,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "baselinePrice": 229.04,
+      "currentPrice": 254.04,
+      "stockReturn": 10.92,
+      "oneMonthReturn": 9.24,
+      "threeMonthReturn": 24.98,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "baselinePrice": 168.52,
+      "currentPrice": 165.66,
+      "stockReturn": -1.7,
+      "oneMonthReturn": 3.02,
+      "threeMonthReturn": 11.23,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "baselinePrice": 944.63,
+      "currentPrice": 917.95,
+      "stockReturn": -2.82,
+      "oneMonthReturn": -1.15,
+      "threeMonthReturn": -9.19,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "baselinePrice": 533.08,
+      "currentPrice": 484.41,
+      "stockReturn": -9.13,
+      "oneMonthReturn": -20.87,
+      "threeMonthReturn": 3.89,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "baselinePrice": 26.23,
+      "currentPrice": 18.92,
+      "stockReturn": -27.87,
+      "oneMonthReturn": 9.3,
+      "threeMonthReturn": -26.3,
+      "baselineDate": "2024-10-10",
+      "lastUpdated": "2025-10-10"
+    }
+  ]
+}
