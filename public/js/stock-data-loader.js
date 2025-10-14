@@ -13,6 +13,44 @@ let stockData = null;
 let portfolioAllocations = null;
 
 /**
+ * Language detection and translations
+ */
+const i18n = {
+  en: {
+    returnsInMonths: 'returns in 12 months',
+    liveDataUpdated: 'Live market data • Updated',
+    errorTitle: 'Data Loading Failed',
+    errorContact: 'Please contact the site administrator or try again later.',
+    retry: 'Retry'
+  },
+  es: {
+    returnsInMonths: 'de retorno en 12 meses',
+    liveDataUpdated: 'Datos del mercado en vivo • Actualizado',
+    errorTitle: 'Error al Cargar Datos',
+    errorContact: 'Por favor contacta al administrador del sitio o intenta nuevamente más tarde.',
+    retry: 'Reintentar'
+  }
+};
+
+// Detect page language
+const getPageLanguage = () => {
+  const htmlLang = document.documentElement.lang || 'en';
+  return htmlLang.startsWith('es') ? 'es' : 'en';
+};
+
+// Get translation
+const t = (key) => {
+  const lang = getPageLanguage();
+  return i18n[lang][key] || i18n.en[key];
+};
+
+// Get base path for data files (handles /es/ subdirectory)
+const getBasePath = () => {
+  const path = window.location.pathname;
+  return path.includes('/es/') ? '../' : './';
+};
+
+/**
  * Load portfolio allocations from JSON file
  */
 async function loadPortfolioAllocations() {
@@ -21,7 +59,8 @@ async function loadPortfolioAllocations() {
   }
   
   try {
-    const response = await fetch('./data/portfolio-allocations.json');
+    const basePath = getBasePath();
+    const response = await fetch(`${basePath}data/portfolio-allocations.json`);
     const data = await response.json();
     portfolioAllocations = data;
     return data;
@@ -63,7 +102,8 @@ async function loadStockData() {
   
   // Fetch from JSON file
   try {
-    const response = await fetch('./data/stock-data.json');
+    const basePath = getBasePath();
+    const response = await fetch(`${basePath}data/stock-data.json`);
     
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -203,8 +243,12 @@ function updateHeroPerformanceCard(stockData, portfolioData) {
   const subheadline = document.querySelector('.subheadline');
   if (subheadline) {
     const currentText = subheadline.innerHTML;
-    const updatedText = currentText.replace(/\+\d+(\.\d+)?%\s+returns\s+in\s+12\s+months/g, 
-      `+${twelveMonthPerf.toFixed(1)}% returns in 12 months`);
+    const lang = getPageLanguage();
+    const pattern = lang === 'es' 
+      ? /\+\d+(\.\d+)?%\s+de\s+retorno\s+en\s+12\s+meses/g 
+      : /\+\d+(\.\d+)?%\s+returns\s+in\s+12\s+months/g;
+    const replacement = `+${twelveMonthPerf.toFixed(1)}% ${t('returnsInMonths')}`;
+    const updatedText = currentText.replace(pattern, replacement);
     subheadline.innerHTML = updatedText;
   }
 }
@@ -263,12 +307,14 @@ function updateDataTimestamp(data) {
   const timestamp = document.querySelector('.perf-data-source .data-source-text');
   if (timestamp) {
     const date = new Date(data.metadata.lastUpdated);
-    const formatted = date.toLocaleDateString('en-GB', { 
+    const lang = getPageLanguage();
+    const locale = lang === 'es' ? 'es-ES' : 'en-GB';
+    const formatted = date.toLocaleDateString(locale, { 
       day: 'numeric', 
       month: 'short', 
       year: 'numeric' 
     });
-    timestamp.textContent = `Live market data • Updated ${formatted}`;
+    timestamp.textContent = `${t('liveDataUpdated')} ${formatted}`;
   }
 }
 
@@ -388,10 +434,10 @@ function showDataFetchError(errorMessage) {
       z-index: 9999;
       max-width: 500px;
     ">
-      <h2 style="color: #c00; margin: 0 0 16px 0;">⚠️ Data Loading Failed</h2>
+      <h2 style="color: #c00; margin: 0 0 16px 0;">⚠️ ${t('errorTitle')}</h2>
       <p style="margin: 0 0 16px 0; color: #333;">${errorMessage}</p>
       <p style="margin: 0; font-size: 0.875rem; color: #666;">
-        Please contact the site administrator or try again later.
+        ${t('errorContact')}
       </p>
       <button onclick="location.reload()" style="
         margin-top: 20px;
@@ -402,7 +448,7 @@ function showDataFetchError(errorMessage) {
         border-radius: 6px;
         cursor: pointer;
         font-weight: 600;
-      ">Retry</button>
+      ">${t('retry')}</button>
     </div>
     <div style="
       position: fixed;
