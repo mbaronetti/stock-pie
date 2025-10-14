@@ -24,10 +24,10 @@ function initializeApp() {
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         
-        // Main text - "24 AI Stocks"
+        // Main text - "25 AI Stocks"
         ctx.font = 'bold 24px Inter';
         ctx.fillStyle = '#1A1A1A';
-        ctx.fillText('24 AI', centerX, centerY - 15);
+        ctx.fillText('25 AI', centerX, centerY - 15);
         
         // Subtext - "Stocks"
         ctx.font = '16px Inter';
@@ -118,7 +118,7 @@ function initializeApp() {
       }
     };
     
-    // Create equal-weight data (24 stocks × 4.17% = 100%)
+    // Create equal-weight data (25 stocks × 4% = 100%)
     const equalWeight = 100 / window.portfolioPerformance.holdings.length;
     const targetData = {
       labels: window.portfolioPerformance.holdings.map(h => h.ticker),
@@ -222,7 +222,7 @@ function initializeApp() {
           
           ctx.font = '14px Inter';
           ctx.fillStyle = '#6B7280';
-          ctx.fillText('24 Holdings', centerX, centerY + 10);
+          ctx.fillText('25 Holdings', centerX, centerY + 10);
         }
         
         ctx.restore();

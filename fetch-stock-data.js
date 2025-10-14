@@ -6,7 +6,7 @@
  *   node fetch-stock-data.js
  * 
  * This script:
- * 1. Fetches historical price data for all 24 AI stocks
+ * 1. Fetches historical price data for all 25 AI stocks
  * 2. Calculates returns since June 1, 2024 (pie baseline)
  * 3. Saves to public/data/stock-data.json
  * 4. Your website reads this static file (no API calls from users!)
