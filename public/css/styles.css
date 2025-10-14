@@ -3110,3 +3110,55 @@ section {
     font-size: 0.9rem;
   }
 }
+
+/* =========================================
+   Single CTA Button Adjustments
+   When only one button is visible (referral hidden)
+   ========================================= */
+
+/* Hero Section - Single button gets purple background */
+.hero .cta-buttons-row:has(.cta-button[style*="display: none"]) {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .cta-buttons-row:has(.cta-button[style*="display: none"]) .cta-button.existing-user {
+  max-width: 400px;
+  width: 100%;
+  background: linear-gradient(135deg, var(--ai-gradient-start), var(--ai-gradient-end));
+  border-color: var(--primary);
+  color: white;
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.35);
+}
+
+.hero .cta-buttons-row:has(.cta-button[style*="display: none"]) .cta-button.existing-user:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.45);
+}
+
+.hero .cta-buttons-row:has(.cta-button[style*="display: none"]) .cta-button.existing-user .cta-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero .cta-buttons-row:has(.cta-button[style*="display: none"]) .cta-button.existing-user .cta-action {
+  color: white;
+}
+
+/* Final CTA Section - Single button centered */
+.final-cta-version .cta-buttons-row:has(.cta-button[style*="display: none"]) {
+  display: flex;
+  justify-content: center;
+}
+
+.final-cta-version .cta-buttons-row:has(.cta-button[style*="display: none"]) .cta-button.existing-user {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero .cta-buttons-row:has(.cta-button[style*="display: none"]) .cta-button.existing-user,
+  .final-cta-version .cta-buttons-row:has(.cta-button[style*="display: none"]) .cta-button.existing-user {
+    max-width: 100%;
+  }
+}
