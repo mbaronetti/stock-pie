@@ -29,6 +29,7 @@ const PORTFOLIO_STOCKS = [
   { ticker: 'AAPL', name: 'Apple' },
   { ticker: 'ANET', name: 'Arista Networks' },
   { ticker: 'ASML', name: 'ASML' },
+  { ticker: 'AVGO', name: 'Broadcom' },
   { ticker: 'AI', name: 'C3.ai' },
   { ticker: 'CRWV', name: 'CoreWeave' }, // CoreWeave isn't public
   { ticker: 'IBM', name: 'IBM' },
@@ -131,7 +132,7 @@ async function processStock(stock) {
  * Main execution
  */
 async function main() {
-  console.log('🚀 Fetching stock data for 24 AI companies...');
+  console.log('🚀 Fetching stock data for 25 AI companies...');
   console.log(`📅 Rolling 12-month window: ${BASELINE_DATE} → ${new Date().toISOString().split('T')[0]}`);
   console.log(`📊 This will take ~30 seconds (rate limiting)...\n`);
   

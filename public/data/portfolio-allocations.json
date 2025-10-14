@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "AI Industry Pie",
-    "description": "24 AI leaders covering the full AI value chain",
-    "totalStocks": 24,
+    "description": "25 AI leaders covering the full AI value chain",
+    "totalStocks": 25,
     "note": "Returns calculated on a rolling 12-month basis"
   },
   "sectorColors": {
@@ -213,6 +213,14 @@
       "aiCategory": "AI Infrastructure",
       "allocation": 4,
       "description": "AI cloud computing infrastructure"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "sector": "AI Chips",
+      "aiCategory": "AI Hardware",
+      "allocation": 4,
+      "description": "AI accelerators, networking chips for data centers"
     }
   ]
 }
