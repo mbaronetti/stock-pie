@@ -407,6 +407,7 @@ function initializeApp() {
           <td class="${returnClass}">
             <strong>${returnSign}${holding.totalReturn.toFixed(1)}%</strong>
           </td>
+          <td class="allocation-cell">${holding.allocation}%</td>
           <td class="description-cell">${holding.description}</td>
         </tr>
         `;
@@ -425,9 +426,15 @@ function initializeApp() {
             <div class="holding-name"><strong>${holding.name}</strong></div>
             <div class="holding-ticker"><code>${holding.ticker}</code></div>
           </div>
-          <div class="holding-return">
-            <span class="stat-label">12-Month Return:</span>
-            <span class="stat-value ${returnClass}"><strong>${returnSign}${holding.totalReturn.toFixed(1)}%</strong></span>
+          <div class="holding-stats">
+            <div class="holding-allocation">
+              <span class="stat-label">${document.documentElement.lang.startsWith('es') ? 'Asignación:' : 'Allocation:'}</span>
+              <span class="stat-value">${holding.allocation}%</span>
+            </div>
+            <div class="holding-return">
+              <span class="stat-label">${document.documentElement.lang.startsWith('es') ? 'Retorno 12 Meses:' : '12-Month Return:'}</span>
+              <span class="stat-value ${returnClass}"><strong>${returnSign}${holding.totalReturn.toFixed(1)}%</strong></span>
+            </div>
           </div>
           <div class="holding-description">${holding.description}</div>
         </div>

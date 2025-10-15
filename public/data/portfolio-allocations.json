@@ -35,7 +35,7 @@
       "name": "NVIDIA",
       "sector": "AI Chips",
       "aiCategory": "AI Hardware",
-      "allocation": 5,
+      "allocation": 4,
       "description": "Leading AI GPU manufacturer, CUDA ecosystem"
     },
     {
@@ -51,7 +51,7 @@
       "name": "Microsoft",
       "sector": "Cloud AI",
       "aiCategory": "AI Infrastructure",
-      "allocation": 5,
+      "allocation": 4,
       "description": "Azure AI, OpenAI partnership, Copilot"
     },
     {
@@ -107,7 +107,7 @@
       "name": "Alphabet Class A",
       "sector": "Cloud AI",
       "aiCategory": "AI Infrastructure",
-      "allocation": 5,
+      "allocation": 4,
       "description": "Google Cloud, TPUs, Gemini, DeepMind"
     },
     {
@@ -115,7 +115,7 @@
       "name": "Meta Platforms",
       "sector": "AI Software",
       "aiCategory": "AI Platforms",
-      "allocation": 5,
+      "allocation": 4,
       "description": "Llama models, content moderation AI, AR/VR"
     },
     {

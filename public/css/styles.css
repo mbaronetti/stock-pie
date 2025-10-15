@@ -3162,3 +3162,67 @@ section {
     max-width: 100%;
   }
 }
+
+/* =========================================
+   Holdings Table - Allocation Column
+   ========================================= */
+
+.allocation-cell {
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.holding-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+.holding-allocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.holding-return {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.holding-allocation .stat-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.holding-allocation .stat-value {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+/* Mobile adjustments for holdings cards */
+@media (max-width: 768px) {
+  .holding-stats {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  
+  .holding-allocation,
+  .holding-return {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .holding-allocation .stat-label,
+  .holding-return .stat-label {
+    margin-bottom: 0;
+  }
+}
