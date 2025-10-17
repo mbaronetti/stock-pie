@@ -47,14 +47,33 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'  # Use Node.js version 20
+          cache: 'npm'  # Cache npm dependencies for faster builds
       
       # Step 3: Install dependencies (yahoo-finance2 package)
       - name: 📦 Install Dependencies
-        run: npm install
+        run: |
+          npm ci  # Use ci for faster, reliable installs in CI
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
       
       # Step 4: Run the data fetch script
       - name: 🔄 Fetch Fresh Stock Data
-        run: node fetch-stock-data.js
+        run: |
+          echo "Testing yahoo-finance2 import..."
+          node -e "
+            try {
+              const yfModule = require('yahoo-finance2');
+              console.log('✅ yahoo-finance2 imported successfully');
+              console.log('Module keys:', Object.keys(yfModule));
+              const yf = yfModule.default || yfModule;
+              console.log('Historical method available:', typeof yf.historical);
+            } catch (error) {
+              console.error('❌ Import failed:', error.message);
+              process.exit(1);
+            }
+          "
+          echo "Running fetch script..."
+          node fetch-stock-data.js
         # This creates/updates: public/data/stock-data.json
       
       # Step 5: Check if stock-data.json changed

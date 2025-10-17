@@ -14,9 +14,19 @@
  * Run daily/weekly to keep data fresh.
  */
 
-const yahooFinance = require('yahoo-finance2').default;
 const fs = require('fs');
 const path = require('path');
+
+// Import yahoo-finance2 with fallback for different environments
+let yahooFinance;
+try {
+  // Try different import methods for compatibility
+  const yfModule = require('yahoo-finance2');
+  yahooFinance = yfModule.default || yfModule;
+} catch (error) {
+  console.error('Error importing yahoo-finance2:', error.message);
+  process.exit(1);
+}
 
 // Suppress deprecation warnings
 yahooFinance.suppressNotices(['ripHistorical']);
