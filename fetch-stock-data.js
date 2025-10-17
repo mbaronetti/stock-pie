@@ -19,17 +19,26 @@ const path = require('path');
 
 // Import yahoo-finance2 with fallback for different environments
 let yahooFinance;
-try {
-  // Try different import methods for compatibility
-  const yfModule = require('yahoo-finance2');
-  yahooFinance = yfModule.default || yfModule;
-} catch (error) {
-  console.error('Error importing yahoo-finance2:', error.message);
-  process.exit(1);
-}
 
-// Suppress deprecation warnings
-yahooFinance.suppressNotices(['ripHistorical']);
+async function initializeYahooFinance() {
+  try {
+    console.log('Attempting to import yahoo-finance2...');
+    console.log('Node version:', process.version);
+    
+    // Use the recommended import method
+    const yfModule = require('yahoo-finance2');
+    yahooFinance = yfModule.default;
+    
+    // Suppress deprecation warnings
+    yahooFinance.suppressNotices(['ripHistorical']);
+    console.log('✅ yahoo-finance2 initialized successfully');
+    
+  } catch (error) {
+    console.error('❌ Failed to initialize yahoo-finance2:', error.message);
+    console.error('Full error:', error);
+    process.exit(1);
+  }
+}
 
 // Portfolio stocks
 const PORTFOLIO_STOCKS = [
@@ -145,6 +154,9 @@ async function processStock(stock) {
  * Main execution
  */
 async function main() {
+  // Initialize yahoo-finance2 first
+  await initializeYahooFinance();
+  
   console.log('🚀 Fetching stock data for 25 AI companies...');
   console.log(`📅 Rolling 12-month window: ${BASELINE_DATE} → ${new Date().toISOString().split('T')[0]}`);
   console.log(`📊 This will take ~30 seconds (rate limiting)...\n`);
