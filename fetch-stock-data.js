@@ -25,7 +25,7 @@ async function initializeYahooFinance() {
     console.log('Attempting to import yahoo-finance2...');
     console.log('Node version:', process.version);
     
-    // Use the recommended import method
+    // Use the recommended import method for Node.js 18
     const yfModule = require('yahoo-finance2');
     yahooFinance = yfModule.default;
     
