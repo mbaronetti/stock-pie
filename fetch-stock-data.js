@@ -18,6 +18,9 @@ const yahooFinance = require('yahoo-finance2').default;
 const fs = require('fs');
 const path = require('path');
 
+// Suppress deprecation warnings
+yahooFinance.suppressNotices(['ripHistorical']);
+
 // Portfolio stocks
 const PORTFOLIO_STOCKS = [
   { ticker: 'GOOGL', name: 'Alphabet Class A' },
