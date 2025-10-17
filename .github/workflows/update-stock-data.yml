@@ -47,14 +47,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'  # Use Node.js version 20
-          cache: 'npm'  # Cache npm dependencies for faster builds
       
       # Step 3: Install dependencies (yahoo-finance2 package)
       - name: 📦 Install Dependencies
         run: |
-          npm ci  # Use ci for faster, reliable installs in CI
           echo "Node version: $(node --version)"
           echo "NPM version: $(npm --version)"
+          npm cache clean --force  # Clean npm cache
+          npm install  # Install dependencies (no lock file available)
       
       # Step 4: Run the data fetch script
       - name: 🔄 Fetch Fresh Stock Data
