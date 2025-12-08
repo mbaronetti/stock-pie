@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "baselineDate": "2024-12-07",
-    "lastUpdated": "2025-12-07T09:23:56.212Z",
+    "baselineDate": "2024-12-08",
+    "lastUpdated": "2025-12-08T09:34:21.312Z",
     "totalStocks": 25,
     "successfulFetches": 25,
     "failedFetches": 0
@@ -15,8 +15,8 @@
       "stockReturn": 150.84,
       "oneMonthReturn": -1.55,
       "threeMonthReturn": 14.78,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "MU",
@@ -26,8 +26,8 @@
       "stockReturn": 130.71,
       "oneMonthReturn": 8.31,
       "threeMonthReturn": 117.35,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "CRWV",
@@ -37,8 +37,8 @@
       "stockReturn": 120.75,
       "oneMonthReturn": -33.38,
       "threeMonthReturn": -22.63,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "REKR",
@@ -48,8 +48,8 @@
       "stockReturn": 118.75,
       "oneMonthReturn": -33.45,
       "threeMonthReturn": 67.26,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "AVGO",
@@ -59,8 +59,8 @@
       "stockReturn": 118.08,
       "oneMonthReturn": 10.2,
       "threeMonthReturn": 32.87,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "INTC",
@@ -70,8 +70,8 @@
       "stockReturn": 98.99,
       "oneMonthReturn": 8.18,
       "threeMonthReturn": 109.14,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "VERI",
@@ -81,8 +81,8 @@
       "stockReturn": 96.6,
       "oneMonthReturn": -27.44,
       "threeMonthReturn": 134.68,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "GOOGL",
@@ -92,8 +92,8 @@
       "stockReturn": 83.2,
       "oneMonthReturn": 23.6,
       "threeMonthReturn": 67.42,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "AMD",
@@ -103,8 +103,8 @@
       "stockReturn": 66.55,
       "oneMonthReturn": -13.82,
       "threeMonthReturn": 23.63,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "ASML",
@@ -114,8 +114,8 @@
       "stockReturn": 55.62,
       "oneMonthReturn": 6.42,
       "threeMonthReturn": 58.26,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "TSM",
@@ -125,8 +125,8 @@
       "stockReturn": 47.97,
       "oneMonthReturn": -0.08,
       "threeMonthReturn": 21.98,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "IBM",
@@ -136,8 +136,8 @@
       "stockReturn": 33.89,
       "oneMonthReturn": 0.16,
       "threeMonthReturn": 21.64,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "NVDA",
@@ -147,8 +147,8 @@
       "stockReturn": 31.41,
       "oneMonthReturn": -2.07,
       "threeMonthReturn": 2.55,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "ANET",
@@ -158,8 +158,8 @@
       "stockReturn": 21.4,
       "oneMonthReturn": -16.4,
       "threeMonthReturn": 4.36,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "TSLA",
@@ -169,8 +169,8 @@
       "stockReturn": 16.73,
       "oneMonthReturn": 4.91,
       "threeMonthReturn": 47.6,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "ORCL",
@@ -180,8 +180,8 @@
       "stockReturn": 14.25,
       "oneMonthReturn": -23.21,
       "threeMonthReturn": -14.26,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "AAPL",
@@ -191,8 +191,8 @@
       "stockReturn": 12.98,
       "oneMonthReturn": 6.07,
       "threeMonthReturn": 34.31,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "META",
@@ -202,8 +202,8 @@
       "stockReturn": 9.75,
       "oneMonthReturn": -8.8,
       "threeMonthReturn": -12.93,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "QCOM",
@@ -213,8 +213,8 @@
       "stockReturn": 8.75,
       "oneMonthReturn": 3.47,
       "threeMonthReturn": 19.11,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "MSFT",
@@ -224,8 +224,8 @@
       "stockReturn": 8.33,
       "oneMonthReturn": -7.73,
       "threeMonthReturn": -9.44,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "AMZN",
@@ -235,8 +235,8 @@
       "stockReturn": 1.52,
       "oneMonthReturn": 2.37,
       "threeMonthReturn": -1.96,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "MRVL",
@@ -246,8 +246,8 @@
       "stockReturn": -7.59,
       "oneMonthReturn": 17.57,
       "threeMonthReturn": 23.07,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "SNPS",
@@ -257,8 +257,8 @@
       "stockReturn": -8.21,
       "oneMonthReturn": 0.56,
       "threeMonthReturn": -26.32,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "NOW",
@@ -268,8 +268,8 @@
       "stockReturn": -23.75,
       "oneMonthReturn": -8.15,
       "threeMonthReturn": -9.41,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     },
     {
       "ticker": "AI",
@@ -279,8 +279,8 @@
       "stockReturn": -63.82,
       "oneMonthReturn": -15.52,
       "threeMonthReturn": -35.99,
-      "baselineDate": "2024-12-07",
-      "lastUpdated": "2025-12-07"
+      "baselineDate": "2024-12-08",
+      "lastUpdated": "2025-12-08"
     }
   ]
 }
