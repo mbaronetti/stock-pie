@@ -1,286 +1,137 @@
 {
   "metadata": {
-    "baselineDate": "2025-01-02",
-    "lastUpdated": "2026-01-02T09:30:27.177Z",
+    "baselineDate": "2025-01-03",
+    "lastUpdated": "2026-01-03T09:26:36.485Z",
     "totalStocks": 25,
-    "successfulFetches": 25,
-    "failedFetches": 0
+    "successfulFetches": 0,
+    "failedFetches": 25
   },
-  "stocks": [
-    {
-      "ticker": "MU",
-      "name": "Micron Technology",
-      "baselinePrice": 87.33,
-      "currentPrice": 285.41,
-      "stockReturn": 226.82,
-      "oneMonthReturn": 24.91,
-      "threeMonthReturn": 145.16,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "baselinePrice": 75.19,
-      "currentPrice": 177.75,
-      "stockReturn": 136.4,
-      "oneMonthReturn": 6.23,
-      "threeMonthReturn": 13.09,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel",
-      "baselinePrice": 20.22,
-      "currentPrice": 36.9,
-      "stockReturn": 82.49,
-      "oneMonthReturn": 7.49,
-      "threeMonthReturn": 50.31,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave",
-      "baselinePrice": 40,
-      "currentPrice": 71.61,
-      "stockReturn": 79.03,
-      "oneMonthReturn": -4.39,
-      "threeMonthReturn": -22.48,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices",
-      "baselinePrice": 120.63,
-      "currentPrice": 214.16,
-      "stockReturn": 77.53,
-      "oneMonthReturn": -7,
-      "threeMonthReturn": 31.1,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
+  "stocks": [],
+  "errors": [
     {
       "ticker": "GOOGL",
       "name": "Alphabet Class A",
-      "baselinePrice": 189.43,
-      "currentPrice": 313,
-      "stockReturn": 65.23,
-      "oneMonthReturn": 10.1,
-      "threeMonthReturn": 50.13,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "ASML",
-      "name": "ASML",
-      "baselinePrice": 700.42,
-      "currentPrice": 1069.86,
-      "stockReturn": 52.75,
-      "oneMonthReturn": 6.55,
-      "threeMonthReturn": 41.8,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor",
-      "baselinePrice": 201.58,
-      "currentPrice": 303.89,
-      "stockReturn": 50.75,
-      "oneMonthReturn": 9.35,
-      "threeMonthReturn": 28.99,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom",
-      "baselinePrice": 231.98,
-      "currentPrice": 346.1,
-      "stockReturn": 49.19,
-      "oneMonthReturn": 1.64,
-      "threeMonthReturn": 17.63,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "VERI",
-      "name": "Veritone",
-      "baselinePrice": 3.2,
-      "currentPrice": 4.65,
-      "stockReturn": 45.31,
-      "oneMonthReturn": 9.15,
-      "threeMonthReturn": 97.87,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA",
-      "baselinePrice": 138.31,
-      "currentPrice": 186.5,
-      "stockReturn": 34.84,
-      "oneMonthReturn": 2.83,
-      "threeMonthReturn": 3.72,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "IBM",
-      "name": "IBM",
-      "baselinePrice": 219.94,
-      "currentPrice": 296.21,
-      "stockReturn": 34.68,
-      "oneMonthReturn": 2.16,
-      "threeMonthReturn": 23.71,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "baselinePrice": 379.28,
-      "currentPrice": 449.72,
-      "stockReturn": 18.57,
-      "oneMonthReturn": 12.08,
-      "threeMonthReturn": 29.75,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "ORCL",
-      "name": "Oracle",
-      "baselinePrice": 166.03,
-      "currentPrice": 194.91,
-      "stockReturn": 17.39,
-      "oneMonthReturn": -11.6,
-      "threeMonthReturn": -17.2,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "ANET",
-      "name": "Arista Networks",
-      "baselinePrice": 111.79,
-      "currentPrice": 131.03,
-      "stockReturn": 17.21,
-      "oneMonthReturn": 6.14,
-      "threeMonthReturn": -1.51,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft",
-      "baselinePrice": 418.58,
-      "currentPrice": 483.62,
-      "stockReturn": 15.54,
-      "oneMonthReturn": -2.06,
-      "threeMonthReturn": -4.09,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple",
-      "baselinePrice": 243.85,
-      "currentPrice": 271.86,
-      "stockReturn": 11.49,
-      "oneMonthReturn": 1.65,
-      "threeMonthReturn": 19.68,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
-    },
-    {
-      "ticker": "QCOM",
-      "name": "Qualcomm",
-      "baselinePrice": 153.64,
-      "currentPrice": 171.05,
-      "stockReturn": 11.33,
-      "oneMonthReturn": 3.63,
-      "threeMonthReturn": 9.35,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
+      "error": "Unexpected token T in JSON at position 0"
     },
     {
       "ticker": "META",
       "name": "Meta Platforms",
-      "baselinePrice": 599.24,
-      "currentPrice": 660.09,
-      "stockReturn": 10.15,
-      "oneMonthReturn": 10.44,
-      "threeMonthReturn": -12.37,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "error": "Unexpected token T in JSON at position 0"
     },
     {
       "ticker": "AMZN",
       "name": "Amazon",
-      "baselinePrice": 220.22,
-      "currentPrice": 230.82,
-      "stockReturn": 4.81,
-      "oneMonthReturn": 3.72,
-      "threeMonthReturn": 1.26,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
+      "error": "Unexpected token T in JSON at position 0"
     },
     {
-      "ticker": "SNPS",
-      "name": "Synopsys",
-      "baselinePrice": 482.75,
-      "currentPrice": 469.72,
-      "stockReturn": -2.7,
-      "oneMonthReturn": 22.38,
-      "threeMonthReturn": -21.32,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
+      "ticker": "AAPL",
+      "name": "Apple",
+      "error": "Unexpected token T in JSON at position 0"
     },
     {
-      "ticker": "REKR",
-      "name": "Rekor Systems",
-      "baselinePrice": 1.74,
-      "currentPrice": 1.38,
-      "stockReturn": -20.69,
-      "oneMonthReturn": -31,
-      "threeMonthReturn": 17.95,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "error": "Unexpected token T in JSON at position 0"
     },
     {
-      "ticker": "MRVL",
-      "name": "Marvell Technology",
-      "baselinePrice": 113.56,
-      "currentPrice": 84.98,
-      "stockReturn": -25.17,
-      "oneMonthReturn": 8.01,
-      "threeMonthReturn": 16.49,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
+      "ticker": "ASML",
+      "name": "ASML",
+      "error": "Unexpected token T in JSON at position 0"
     },
     {
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "baselinePrice": 210.87,
-      "currentPrice": 153.19,
-      "stockReturn": -27.35,
-      "oneMonthReturn": -6.36,
-      "threeMonthReturn": -12.95,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "error": "Unexpected token T in JSON at position 0"
     },
     {
       "ticker": "AI",
       "name": "C3.ai",
-      "baselinePrice": 34.67,
-      "currentPrice": 13.48,
-      "stockReturn": -61.12,
-      "oneMonthReturn": -1.89,
-      "threeMonthReturn": -21.12,
-      "baselineDate": "2025-01-02",
-      "lastUpdated": "2026-01-02"
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "IBM",
+      "name": "IBM",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "REKR",
+      "name": "Rekor Systems",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "error": "Unexpected token T in JSON at position 0"
+    },
+    {
+      "ticker": "VERI",
+      "name": "Veritone",
+      "error": "Unexpected token T in JSON at position 0"
     }
   ]
 }
